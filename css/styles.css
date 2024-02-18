@@ -1,0 +1,145 @@
+/* Made by Hitansh Parmar, Student number: 8916123 */
+/* Setting font properties for the entire document */
+html {
+    font: 20px/1.5 Arial, sans-serif;
+}
+/* Setting font variant to small-caps for h1 and h2 elements */
+h1, h2 {
+    font-variant: small-caps;
+}
+/* Style for figure captions */
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.1rem; /* Relative to the root element */
+}
+/* Style for <q> elements */
+q {
+    font-style: italic;   
+    font-family: cursive;
+    font-size: 1.1rem; 
+}
+/* Style for <p> elements inside the footer */
+footer p {
+    font-size: 0.7rem; 
+}
+/* Set width and max-width for the body element */
+body {
+    width: 90%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+}
+/* Setting width and height properties for image elements */
+.main-section-figure img {
+    width: 300px; 
+    height: 200px;
+}
+/* Setting width and height properties for figure elements */
+.main-section-figure {
+    width: 300; 
+    height: 200; 
+}
+/* Setting width property for iframe/video elements */
+iframe, video {
+    width: 100%; /* Adjust as needed */
+}
+/* Body ruleset */
+body {
+    padding: 1rem; /* Adjust as needed */
+    margin: 0 auto; /* Center align horizontally */
+}
+header,
+footer {
+  text-align: center;
+}
+.mainsection {
+    text-align: center;
+    padding: 1rem; /* Adjust as needed */
+  }
+  #biography {
+    text-align: left;
+  }
+  img.main-section-image {
+    padding: 1rem; 
+  }
+  .main-section-figure {
+    padding: 1rem; 
+    margin: 2rem auto; 
+  }
+  #quote {
+    padding: 1rem; 
+  }
+  iframe, video {
+    padding: 1rem; 
+}
+/* Adding a sky blue solid border to the header and footer */
+header, footer {
+    border: 2px solid #87CEEB; 
+}
+ /* Rounding the corners of the image elements */
+img.main-section-image {
+    border-radius: 0.5rem; 
+}
+ /* Border and rounded corners for the figure element with the relative path image */
+#relative-path-image {
+    border: 2px solid rgb(0, 128, 0); 
+    border-radius: 0.5rem; 
+}
+/* Border and rounded corners for the figure element with the absolute path image */
+#absolute-path-image {
+    border: 2px solid rgb(255, 0, 0); 
+    border-radius: 0.5rem;
+}
+/* Border and rounded corners for the video/iframe element */
+video,
+iframe {
+    border: 2px solid rgb(255, 165, 0); 
+    border-radius: 0.5rem; 
+}
+/* Border for the blockquote with the q element nested */
+#quote {
+    border: 1px solid #ff0; 
+}
+/* Adding box shadow to highlight the quote */
+#quote {
+    box-shadow: 0.2rem 0.2rem 0.2rem pink; 
+}
+/* Adding border to iframe element */
+iframe, video {
+    border: 2px solid #f00;
+}
+/* Changing font color of figcaption to match border color */
+#relative-path-image figcaption {
+    color: #008000; 
+}
+/* Changing font color of figcaption to match border color */
+#absolute-path-image figcaption {
+    color: #FF0000; 
+}
+/* Setting font color for h1 and h2 elements using a named color */
+h1, h2 {
+    color: black; /* Named color for font */
+}
+/* Set gradient background for header and footer elements */
+header, footer {
+    background-image: linear-gradient(to right, rgb(139, 69, 19), rgb(165, 42, 42)); /* Gradient background using rgb method */
+}
+/* Setting background color for sections */
+section.mainsection {
+    background-color: hsla(240, 100%, 50%, 0.5); 
+}
+/* Setting background color for figure element with absolute path image */
+#absolute-path-image {
+    background-color: hsla(30, 100%, 50%, 0.7); 
+}
+/* Setting background color for figure element with absolute path image */
+#absolute-path-image {
+    background-color: hsla(30, 100%, 50%, 0.7); 
+}
+/* Setting background color for figure element with relative path image */
+#relative-path-image {
+    background-color: hsla(40, 100%, 50%, 0.3); /* Adjusted HSLA color */
+}
+
+
+  
