@@ -11,7 +11,7 @@ h1, h2 {
 figcaption {
     font-weight: bold;
     font-variant: small-caps;
-    font-size: 1.1rem; /* Relative to the root element */
+    font-size: 1.1rem; 
 }
 /* Style for <q> elements */
 q {
@@ -41,12 +41,12 @@ body {
 }
 /* Setting width property for iframe/video elements */
 iframe, video {
-    width: 100%; /* Adjust as needed */
+    width: 90%; 
 }
 /* Body ruleset */
 body {
-    padding: 1rem; /* Adjust as needed */
-    margin: 0 auto; /* Center align horizontally */
+    padding: 1rem; 
+    margin: 0 auto; 
 }
 header,
 footer {
@@ -54,7 +54,7 @@ footer {
 }
 .mainsection {
     text-align: center;
-    padding: 1rem; /* Adjust as needed */
+    padding: 1rem; 
   }
   #biography {
     text-align: left;
@@ -118,11 +118,11 @@ iframe, video {
 }
 /* Setting font color for h1 and h2 elements using a named color */
 h1, h2 {
-    color: black; /* Named color for font */
+    color: black; 
 }
-/* Set gradient background for header and footer elements */
+/* Setting gradient background for header and footer elements */
 header, footer {
-    background-image: linear-gradient(to right, rgb(139, 69, 19), rgb(165, 42, 42)); /* Gradient background using rgb method */
+    background-image: linear-gradient(to right, rgb(139, 69, 19), rgb(165, 42, 42)); 
 }
 /* Setting background color for sections */
 section.mainsection {
@@ -138,8 +138,176 @@ section.mainsection {
 }
 /* Setting background color for figure element with relative path image */
 #relative-path-image {
-    background-color: hsla(40, 100%, 50%, 0.3); /* Adjusted HSLA color */
+    background-color: hsla(40, 100%, 50%, 0.3); 
+}
+* Adding float and width for nav element */
+#nav {
+    float: left;
+    width: 50%;
 }
 
+/* Adding float and width for main element */
+#main {
+    float: left;
+    width: 70%;
+}
 
+/* Adding float and width for aside element */
+#aside {
+    float: left;
+    width: 30%;
+}
+
+/* Clearing float for footer element */
+footer {
+    clear: both;
+}
+
+/* Floating Biography section and image section next to each other */
+#biography,
+.main-section-image {
+    float: left;
+}
+
+/* Clearing float for next section element */
+section + section {
+    clear: both;
+}
+/* Aside */
+
+/* Headings */
+aside h1, aside h2, aside h3, aside h4, aside h5, aside h6 {
+    font-variant: normal; /* Changing font variant */
+    color: blue; /* Changing font color */
+    text-align: center; /* Centering the alignment */
+}
+
+/* Table */
+aside table {
+    border-collapse: collapse; /* Add borders */
+    width: 100%; /* Adjust width as needed */
+}
+
+aside th, aside td {
+    border: 1px solid black; /* Add borders */
+    font-weight: bold; /* Changing font weight */
+    font-style: italic; /* Changing font style */
+    font-variant: small-caps; /* Changing font variant */
+    color: green; /* Changing font color */
+    text-align: center; /* Align data center */
+}
+
+/* Links */
+aside ul {
+    list-style: none; /* Remove bullet points */
+}
+
+aside a {
+    text-decoration: none; /* Remove underline */
+    color: red; /* Changing font color */
+    line-height: 1.5; /* Increase line-height */
+}
+
+/* Hover effect for links in Web Foundations */
+#web-foundations a:hover {
+    color: purple; /* Change color of link text when hovering */
+}
+
+nav ul li {
+    display: inline; /* Display links horizontally */
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Changing font weight */
+    font-style: italic; /* Changing font style */
+    font-variant: small-caps; /* Changing font variant */
+    color: #fff; /* Changing font color */
+    background-color: #000; /* Set background color */
+    padding: 10px 20px; /* Adding padding */
+    margin-right: 10px; /* Adding margin */
+    border: 2px solid #000; /* Adding border */
+    display: inline-block; /* Displaying as block element */
+    width: auto; /* Setting width to auto */
+}
+
+nav a:hover {
+    color: #000; /* Changing font color on hover */
+    background-color: #fff; /* Changing background color on hover */
+}
+/* Form */
+form {
+    padding: 20px; /* Adjust padding */
+    margin: 0 auto; /* Center the form */
+    max-width: 500px; /* Limit maximum width */
+    background-color: #f9f9f9; /* Add background color */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+/* Labels */
+label {
+    color: #333; /* Change font color */
+    font-variant: small-caps; /* Change font variant */
+    font-weight: bold; /* Change font weight */
+    text-align: left; /* Align labels to the left */
+}
+
+/* Input Controls */
+input[type="text"], input[type="email"], textarea {
+    width: 100%; /* Make inputs full width */
+    height: 40px; /* Set input height */
+    padding: 10px; /* Add padding */
+    margin-bottom: 20px; /* Add margin between inputs */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius */
+}
+
+input[type="submit"] {
+    width: 100%; /* Make submit button full width */
+    height: 40px; /* Set button height */
+    padding: 10px; /* Add padding */
+    background-color: #007bff; /* Change button background color */
+    color: #fff; /* Change button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer */
+}
+
+/* Responsive CSS */
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 14px; /* Decrease html font size for smaller screens */
+    }
+
+    form {
+        max-width: 90%; /* Adjust form width for smaller screens */
+    }
+
+    input[type="text"], input[type="email"], textarea {
+        height: 35px; /* Decrease input height for smaller screens */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+
+    input[type="submit"] {
+        height: 35px; /* Decrease button height for smaller screens */
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    form {
+        max-width: 70%; /* Adjust form width for tablet screens */
+    }
+}
+
+/* Large Desktop Styles */
+@media only screen and (min-width: 1025px) {
+    form {
+        max-width: 800px; /* Adjust form width for large desktop screens */
+    }
+}
   

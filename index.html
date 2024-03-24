@@ -5,22 +5,55 @@
    <meta charset="UTF-8">
    <meta name="description" content="Subhman Gill, a young talented cricketer">
    <meta name="keywords" content="Subhman Gill, cricketer, biography, career">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/normalize.css">
    <link rel="stylesheet" href="css/styles.css">
    <title>Subhman Gill</title>
 </head>
    <body>
+     <!-- Contact info -->
+     <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="contact.html">Contact</a></li>
+        </ul>
+     </nav>
       <!-- Header -->
       <header>
-          <h1>Subhan Gill - A younge talented cricketer</h1>
+          <h1>Connect with me</h1>
       </header>
+      <main>
+        <header>
+            <h1>Contact Us</h1>
+        </header>
+        <form action="submitFormHere" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="favoriteColor">Favorite Color:</label>
+            <input type="color" id="favoriteColor" name="favoriteColor"><br><br>  
+            <label for="contactReason">Reason for contact:</label>
+          <select id="contactReason" name="contactReason"> 
+              <option value="">Please choose an option</option> 
+              <option value="feedback" selected>Feedback</option> 
+              <option value="inquiry">Inquiry</option> 
+          </select><br><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    
   
       <!-- Main Content -->
       <main>
           <!-- Personal and Professional details -->
           <section class="mainsection"> <!-- Added class="mainsection" -->
               <h2>Biography</h2>
-              <blockquote cite="https://en.wikipedia.org/wiki/Shubman_Gill#Early_life"></blockquote>
+              <blockquote id="bio" cite="https://en.wikipedia.org/wiki/Shubman_Gill#Early_life"></blockquote>
               <p>Shubman Gill (born 8 September 1999) is an Indian international cricketer who represents the Indian cricket team across all three formats.<br>
                 He is the captain of the Gujarat Titans in the Indian Premier League and plays for Punjab in domestic cricket.<br>
                 He is widely considered as one of the best batsmen in contemporary world cricket.</p>
@@ -28,7 +61,7 @@
           </section>
   
           <!-- Images Section -->
-          <section class="mainsection"> <!-- Added class="mainsection" -->
+          <section class="mainsection"> 
               <h2>Images</h2>
               <p>Here are some images of Subhan Gill:</p>
               <!-- Including images here -->
@@ -43,10 +76,16 @@
         <img src=images/s2.jpg alt="Description of the image">
         <figcaption>First ipl century.</figcaption>
     </figure>
+    <!-- 
+<figure class="main-section-figure" id="absolute-path-image">
+    <img src="C:\Users\Hitansh\OneDrive - Conestoga College\web dev\images\s1.jpg" alt="Description of the image">
+    <figcaption>first double hundred at international level.</figcaption>
+</figure>
+-->
           </section>
   
           <!-- Quote Section -->
-          <section class="mainsection"> <!-- Added class="mainsection" -->
+          <section class="mainsection"> 
               <h2>Quote</h2>
               <!-- Blockquote with unique ID 'quote' -->
               <blockquote id="quote">
@@ -56,13 +95,31 @@
           </section>
   
           <!-- Media Section -->
-          <section class="mainsection"> <!-- Added class="mainsection" -->
+          <section class="mainsection"> 
               <h2>Media</h2>
               <p>Check out Subhan Gill's 200 notout innings against Newzealand.</p>
               <!-- Video using iframe -->
-    <iframe width="560" height="315" src=https://www.youtube.com/embed/ClmV18YVHXQ?si=Vsap0sZyFyhGDxR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="300" height="300" src="https://www.youtube.com/embed/ClmV18YVHXQ?si=Vsap0sZyFyhGDxR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </section>
       </main>
+      <!-- Aside -->
+      <aside>
+        <h3>FaQs</h3>
+        <table>
+            <tr>
+               <td>When was subhman gill born?</td>
+               <td>He was born on 8th september 1999</td>
+            </tr>
+            <tr>
+               <td>Subhman Gill isthe captaion of which team?</td>
+               <td>Subhman Gill is the captain of Gujarat Titans in Indian Premier League.</td>
+            </tr>
+         </table>
+         <h3>External Links</h3>
+         <ul>
+            <li><a href="https://www.espncricinfo.com/cricketers/shubman-gill-1070173" target="_blank">Link 1</a></li>
+            <li><a href="https://www.cricbuzz.com/profiles/11808/shubman-gill" target="_blank">Link 2</a></li>
+     </aside>
   
       <!-- Footer -->
       <footer>
